@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="level.js"></script>
     <title>Categories: Movie</title>
-    <link href="FriQuest.css" rel="stylesheet" type="text/css">
+    <link href="categories.css" rel="stylesheet" type="text/css">
     <link href="level.css" rel="stylesheet" type="text/css">
     <style> 
 
@@ -32,26 +32,31 @@
       </div>
     </div>
   </section>
-<div class="level">
+<div class="telo">
+<span class="car" id="car">
+  <img src="https://i.ibb.co/p1QH5Z0/IMG-8494.png" alt="movie">
+
+</span>
+<span class="level">
   <div class="easy">
         <button id="hid1" onclick="viewDivEasy()" class="btn btn-primary btn-lg" style="position: relative; display: flex;flex-direction: column;">Easy</button>
         <ul id="easy" style="display: none;">
-                <button onclick="viewCall1()" class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;"> Call1 </button>
-                <div class="card-">
-                  <div class="card--body">
-                    <p class="card--text" id="Cat1Call1" style="display: none;">TextCat1Call1<br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+          <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall1()" class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Watching a movie at home.</button>
+                    <p class="card--text" id="Call1" style="display: none;">Let's go away and in this pleasant atmosphere we will arrange a movie viewing of your choice.<br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
                   </div>
                 </div>
                 <div class="card-">
                   <div class="card--body">
-                    <button onclick="viewCall2()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;"> Call2</button>
-                    <p id="Cat1Call2" style="display: none;"class="card--text">TextCat1Call2<br> <button type="button" class="btn btn-primary btn-sm" disabled >Send</button></p>
+                    <button onclick="viewCall2()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;">Going to the cinema.</button>
+                    <p id="Call2" style="display: none;"class="card--text">It's been a long time since we went to the movies. Let's go to the movies. I pay, and you choose a movie.<br> <button type="button" class="btn btn-primary btn-sm" disabled >Send</button></p>
                  </div>
                 </div>
                 <div class="card-">
                   <div class="card--body">
-                    <button onclick="viewCall3()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;"> Call3</button>
-                        <p id="Cat1Call3" style="display: none;"class="card--text">TextCat1Call3<br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                    <button onclick="viewCall3()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;">Watching a movie from a distance.</button>
+                        <p id="Call3" style="display: none;"class="card--text">Let's try to watch a movie without being together. Let's see what happens.<br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
                   </div>
                 </div>
         </ul> 
@@ -62,37 +67,37 @@
         <ul id="middle" style="display: none;" >
           <div class="card-">
               <div class="card--body">
-                <button onclick="viewCall4()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;"> Call4 </button>
-                <p id="Cat1Call4" style="display: none;"class="card--text">TextCat1Call4<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                <button onclick="viewCall4()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">A photo shoot in the cinema.</button>
+                <p id="Call4" style="display: none;"class="card--text">Let's try to arrange a photo shoot while watching the movie. I think you'll like it<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
               </div>
             </div>
             <div class="card-">
               <div class="card--body">
-                <button onclick="viewCall5()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;"> Call5</button>
-                <p id="Cat1Call5" style="display: none;"class="card--text">TextCat1Call5 
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                <button onclick="viewCall5()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Evening cinema hall.</button>
+                <p id="Call5" style="display: none;"class="card--text">It's been a long time since we went to the movies. Let me leave you little hints about the movie all week, and you secretly buy tickets. Let's see if you guessed right.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
                 </div>
             </div>
         </ul>
-    </div>
-    <br>
-    <div class="hard">
+  </div>
+  <br>
+  <div class="hard">
       <button id="hid3" onclick="viewDivHard()"class="btn btn-primary btn-lg"style="position: relative; display: flex;flex-direction: column;">Hard</button>
         <ul id="hard" style="display: none;">
           <div class="card-">
               <div class="card--body">
-                <button onclick="viewCall6()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;"> Call6 </button>
-                <p id="Cat1Call6" style="display: none;"class="card--text">TextCat1Call6<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                <button onclick="viewCall6()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Rebels</button>
+                <p id="Call6" style="display: none;"class="card--text">Let's forget about all the norms of morality and arrange a riot right in the cinema hall. I assure you; it will be fun<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
               </div>
             </div>
              <div class="card-">
               <div class="card--body">
-                <button onclick="viewCall7()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;"> Call7</button>
-                <p id="Cat1Call7" style="display: none;"class="card--text">TextCat1Call7<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                <button onclick="viewCall7()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Cosplay</button>
+                <p id="Call7" style="display: none;"class="card--text">Come on, in the allotted time, you'll do a cosplay for me on my favorite character from the movie, and I have to guess. It will be fun and interesting!<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
               </div>
             </div>
         </ul>  
-    </div>
   </div>
+</span>
+</div>
 </body>
 </html>
