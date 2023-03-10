@@ -11,6 +11,8 @@
 }
 .card--text{
     text-align: center;
+    font-family: segoe ui;
+    font-size: 16px;
 }
 .card-{
 	position: relative;
@@ -32,7 +34,8 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    max-width: 50%;
+    max-width: 30%;
+
 }
 .middle{
     display: flex;
@@ -40,7 +43,7 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    max-width: 50%;
+    max-width: 30%;
 }
 .hard{
     display: flex;
@@ -48,7 +51,7 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    max-width: 50%;
+    max-width: 30%;
 }
 .level{
     display: flex;
@@ -56,5 +59,17 @@
     align-content: center;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
+}
+.car {
+    max-width: 40%;
+    margin-left: -15%;
+}
+.car img{
+    max-width: 70%;
+}
+.telo{
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
 }
