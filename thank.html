@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="level.js"></script>
+    <title>Categories: Thank you</title>
+    <link href="categories.css" rel="stylesheet" type="text/css">
+    <link href="level.css" rel="stylesheet" type="text/css">
+    <style> 
+
+</style>
+</head>
+<body>
+      <header>
+    <div class="logo"><a href="FriQuest.html"style="color: #000;"><img src="https://i.ibb.co/4NFbXWk/IMG-8443.jpg" alt="logo" border="0">┃FriQuest</a></div>
+    <div class="icons">
+      <a href="categories.html"><img src="https://i.ibb.co/6Dv767F/IMG-8448.jpg" alt="categories" border="0"></a>
+       <img src="https://i.ibb.co/Hzg225P/IMG-8451.jpg" alt="adventures" border="0">
+       <img src="https://i.ibb.co/LZcXfLz/IMG-8450.jpg" alt="coins" border="0">
+      <a href="sign.html"><img src="https://i.ibb.co/gVPTV2d/IMG-8449.jpg" alt="sign" border="0"></a>
+    </div>
+  </header>
+    <section class="categories">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Thank you</h1>
+        <p class="lead text-muted">We need to thank each other more often.</p>
+      </div>
+    </div>
+  </section>
+<div class="level">
+  <div class="easy">
+        <button id="hid1" onclick="viewDivEasy()" class="btn btn-primary btn-lg" style="position: relative; display: flex;flex-direction: column;">Easy</button>
+        <ul id="easy" style="display: none;">
+          <div class="card-">
+            <div class="card--body">
+                <button onclick="viewCall1()" class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Top 5 of our photos.</button>
+                    <p class="card--text" id="Call1" style="display: none;">I am very grateful to you for all the time we spent with you. I'm asking you to find 5 photos that you like the most. In each photo, explain why you like this photo.<br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                  </div>
+                </div>
+                <div class="card-">
+                  <div class="card--body">
+                    <button onclick="viewCall2()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;">Favorite food.</button>
+                    <p id="Call2" style="display: none;"class="card--text">I want you to say "thank you" for a lot of things. But now I want us to do it while cooking our favorite dishes. Everyone cooks a partner's favorite dish. We have to write the word "thank you" on the food. Let's cook?<br> <button type="button" class="btn btn-primary btn-sm" disabled >Send</button></p>
+                 </div>
+                </div>
+                <div class="card-">
+                  <div class="card--body">
+                    <button onclick="viewCall3()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;">A whole week.</button>
+                        <p id="Call3" style="display: none;"class="card--text">
+                          For a whole week every night we will say "thank you" to each other for what we did for each other last year.
+                          <br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                  </div>
+                </div>
+        </ul> 
+  </div>
+  <br>
+  <div class="middle">
+        <button id="hid2" onclick="viewDivMiddle()"class="btn btn-primary btn-lg"style="position: relative; display: flex;flex-direction: column;">Medium</button>
+        <ul id="middle" style="display: none;" >
+          <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall4()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Exchange of letters.</button>
+                <p id="Call4" style="display: none;"class="card--text">We will write letters to each other in which we will tell how much we value each other. In our letters, we should write a list of what we want to thank each other for. The list is not limited in length. Put the letter in the envelope, I'll do the same.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+            <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall5()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">A dream gift.</button>
+                <p id="Call5" style="display: none;"class="card--text">Let’s get ready for me the gift of my dreams, thereby saying thank you to me.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <br>
+    <div class="hard">
+      <button id="hid3" onclick="viewDivHard()"class="btn btn-primary btn-lg"style="position: relative; display: flex;flex-direction: column;">Hard</button>
+        <ul id="hard" style="display: none;">
+          <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall6()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Search for notes.</button>
+                <p id="Call6" style="display: none;"class="card--text">For this challenge, I will leave 10 little notes in unexpected places. On each note, I will write something that I want to say in gratitude to you. Your task is to find all the notes before the time of the call has expired. Remember: I mark the call completed only if you find all 10 notes in time.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+             <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall7()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Thanksgiving dinner </button>
+                <p id="Call7" style="display: none;"class="card--text">I am grateful to you for everything you do, as a thank you I will arrange the best evening for you. Wait for an invitation within a week. I'll get us a room in a hotel with a swimming pool.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+        </ul>  
+    </div>
+  </div>
+</body>
+</html>
