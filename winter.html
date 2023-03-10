@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="level.js"></script>
+    <title>Categories: Winter</title>
+    <link href="categories.css" rel="stylesheet" type="text/css">
+    <link href="level.css" rel="stylesheet" type="text/css">
+    <style> 
+
+</style>
+</head>
+<body>
+      <header>
+    <div class="logo"><a href="FriQuest.html"style="color: #000;"><img src="https://i.ibb.co/4NFbXWk/IMG-8443.jpg" alt="logo" border="0">┃FriQuest</a></div>
+    <div class="icons">
+      <a href="categories.html"><img src="https://i.ibb.co/6Dv767F/IMG-8448.jpg" alt="categories" border="0"></a>
+       <img src="https://i.ibb.co/Hzg225P/IMG-8451.jpg" alt="adventures" border="0">
+       <img src="https://i.ibb.co/LZcXfLz/IMG-8450.jpg" alt="coins" border="0">
+      <a href="sign.html"><img src="https://i.ibb.co/gVPTV2d/IMG-8449.jpg" alt="sign" border="0"></a>
+    </div>
+  </header>
+    <section class="categories">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Winter</h1>
+        <p class="lead text-muted">Winter is a harsh and cold season, but together we will be warmer.</p>
+      </div>
+    </div>
+  </section>
+<div class="level">
+  <div class="easy">
+        <button id="hid1" onclick="viewDivEasy()" class="btn btn-primary btn-lg" style="position: relative; display: flex;flex-direction: column;">Easy</button>
+        <ul id="easy" style="display: none;">
+                <button onclick="viewCall1()" class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Watching a movie in a cozy home environment.</button>
+                <div class="card-">
+                  <div class="card--body">
+                    <p class="card--text" id="Call1" style="display: none;">What a lovely winter plan to watch a movie with you. Choose a movie, and I'll cook the rest.<br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                  </div>
+                </div>
+                <div class="card-">
+                  <div class="card--body">
+                    <button onclick="viewCall2()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;">Go ice skating</button>
+                    <p id="Call2" style="display: none;"class="card--text">I want to spend the evening with you. Let's spend it by skating.<br> <button type="button" class="btn btn-primary btn-sm" disabled >Send</button></p>
+                 </div>
+                </div>
+                <div class="card-">
+                  <div class="card--body">
+                    <button onclick="viewCall3()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;">Winter walk</button>
+                        <p id="Call3" style="display: none;"class="card--text">
+                          Let's take a walk admiring the winter views.
+                          <br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                  </div>
+                </div>
+        </ul> 
+  </div>
+  <br>
+  <div class="middle">
+        <button id="hid2" onclick="viewDivMiddle()"class="btn btn-primary btn-lg"style="position: relative; display: flex;flex-direction: column;">Medium</button>
+        <ul id="middle" style="display: none;" >
+          <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall4()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Snowman</button>
+                <p id="Call4" style="display: none;"class="card--text">I would like to spend some time playing in the snow. We can make a snowman and decorate it with our clothes.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+            <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall5()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Winter photo shoot</button>
+                <p id="Call5" style="display: none;"class="card--text">Let's have a photo shoot while walking and enjoying the winter views.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <br>
+    <div class="hard">
+      <button id="hid3" onclick="viewDivHard()"class="btn btn-primary btn-lg"style="position: relative; display: flex;flex-direction: column;">Hard</button>
+        <ul id="hard" style="display: none;">
+          <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall6()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Night walk</button>
+                <p id="Call6" style="display: none;"class="card--text">We haven't had long walks for a long time. Let's take a walk for the whole night, where we'll have fun, arrange a photo shoot, make a snowman and go home tired<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+             <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall7()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Let's go snowboarding!</button>
+                <p id="Call7" style="display: none;"class="card--text">You can arrange real races on a special route or just in a straight line. I promise it will be fun<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+        </ul>  
+    </div>
+  </div>
+</body>
+</html>
