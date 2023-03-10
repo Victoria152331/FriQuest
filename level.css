@@ -30,28 +30,38 @@
 }
 .easy{
     display: flex;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: center;
-    max-width: 30%;
+    max-width: 40%;
+    position:fixed;
+    left: 710px; 
+    top:280px; 
+
 
 }
 .middle{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    max-width: 30%;
+    max-width: 40%;
+    position:fixed;
+    left: 698px; 
+    top: 360px; 
 }
 .hard{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    max-width: 30%;
+    max-width: 40%;
+    position:fixed;
+    left: 710px; 
+    top: 440px; 
 }
 .level{
     display: flex;
@@ -63,13 +73,19 @@
 }
 .car {
     max-width: 40%;
-    margin-left: -15%;
 }
 .car img{
     max-width: 70%;
+    position:fixed;
+    right: 950px; 
+    top:250px; 
+    border:10;
+    width: 30%;
 }
-.telo{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
+    .categories2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: flex-start;
+    margin-left: -26%;
+  }
