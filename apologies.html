@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="level.js"></script>
+    <title>Categories: Apologies</title>
+    <link href="categories.css" rel="stylesheet" type="text/css">
+    <link href="level.css" rel="stylesheet" type="text/css">
+    <style> 
+
+</style>
+</head>
+<body>
+      <header>
+    <div class="logo"><a href="FriQuest.html"style="color: #000;"><img src="https://i.ibb.co/4NFbXWk/IMG-8443.jpg" alt="logo" border="0">┃FriQuest</a></div>
+    <div class="icons">
+      <a href="categories.html"><img src="https://i.ibb.co/6Dv767F/IMG-8448.jpg" alt="categories" border="0"></a>
+       <img src="https://i.ibb.co/Hzg225P/IMG-8451.jpg" alt="adventures" border="0">
+       <img src="https://i.ibb.co/LZcXfLz/IMG-8450.jpg" alt="coins" border="0">
+      <a href="sign.html"><img src="https://i.ibb.co/gVPTV2d/IMG-8449.jpg" alt="sign" border="0"></a>
+    </div>
+  </header>
+    <section class="categories">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Apologies</h1>
+        <p class="lead text-muted">Apologies is one of the greatest gifts we can give ourselves.</p>
+      </div>
+    </div>
+  </section>
+<div class="level">
+  <div class="easy">
+        <button id="hid1" onclick="viewDivEasy()" class="btn btn-primary btn-lg" style="position: relative; display: flex;flex-direction: column;">Easy</button>
+        <ul id="easy" style="display: none;">
+          <div class="card-">
+            <div class="card--body">
+                <button onclick="viewCall1()" class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">A new beginning.</button>
+                    <p class="card--text" id="Call1" style="display: none;">Let's forget what's happened lately. Pick a song and we'll cuddle until it's over. After that, we must forget our grievances and start anew.<br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                  </div>
+                </div>
+                <div class="card-">
+                  <div class="card--body">
+                    <button onclick="viewCall2()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;">I want to forgive you.</button>
+                    <p id="Call2" style="display: none;"class="card--text">You know I want to forgive you, but it won't be for free. I want you to write me a poem. It can be short or long. This is an opportunity for you to creatively express your changes! The only rule is that it should be written from the bottom of your heart.<br> <button type="button" class="btn btn-primary btn-sm" disabled >Send</button></p>
+                 </div>
+                </div>
+                <div class="card-">
+                  <div class="card--body">
+                    <button onclick="viewCall3()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;">Say it with flowers.</button>
+                        <p id="Call3" style="display: none;"class="card--text">
+                          I want your apology in the form of a beautiful bouquet of flowers. Put them in a vase in our house. Show me how much you appreciate me.
+                          <br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                  </div>
+                </div>
+        </ul> 
+  </div>
+  <br>
+  <div class="middle">
+        <button id="hid2" onclick="viewDivMiddle()"class="btn btn-primary btn-lg"style="position: relative; display: flex;flex-direction: column;">Medium</button>
+        <ul id="middle" style="display: none;" >
+          <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall4()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Pillow fight.</button>
+                <p id="Call4" style="display: none;"class="card--text">You and I both know that there is not always a good mood. We both have good days and bad days, and we have to forgive each other. But who is the first to apologize? We're going to have a pillow fight, and whoever gives up has to apologize first. It will make us both smile and forget about the bad mood!<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+            <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall5()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Food of Forgiveness.</button>
+                <p id="Call5" style="display: none;"class="card--text">It’s been a long time since I've eaten your food. Come on, for the sake of my forgiveness, will you cook me your homemade food.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <br>
+    <div class="hard">
+      <button id="hid3" onclick="viewDivHard()"class="btn btn-primary btn-lg"style="position: relative; display: flex;flex-direction: column;">Hard</button>
+        <ul id="hard" style="display: none;">
+          <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall6()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Forgive me</button>
+                <p id="Call6" style="display: none;"class="card--text">I apologize for everything I've done. To prove how sorry I am, I will do whatever you tell me to do for as long as this assignment lasts.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+             <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall7()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Ask for forgiveness.</button>
+                <p id="Call7" style="display: none;"class="card--text">You really offended me and to make amends you need to do everything I say throughout this day.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+        </ul>  
+    </div>
+  </div>
+</body>
+</html>
