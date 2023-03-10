@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="level.js"></script>
+    <title>Categories: Spring</title>
+    <link href="categories.css" rel="stylesheet" type="text/css">
+    <link href="level.css" rel="stylesheet" type="text/css">
+    <style> 
+
+</style>
+</head>
+<body>
+      <header>
+    <div class="logo"><a href="FriQuest.html"style="color: #000;"><img src="https://i.ibb.co/4NFbXWk/IMG-8443.jpg" alt="logo" border="0">┃FriQuest</a></div>
+    <div class="icons">
+      <a href="categories.html"><img src="https://i.ibb.co/6Dv767F/IMG-8448.jpg" alt="categories" border="0"></a>
+       <img src="https://i.ibb.co/Hzg225P/IMG-8451.jpg" alt="adventures" border="0">
+       <img src="https://i.ibb.co/LZcXfLz/IMG-8450.jpg" alt="coins" border="0">
+      <a href="sign.html"><img src="https://i.ibb.co/gVPTV2d/IMG-8449.jpg" alt="sign" border="0"></a>
+    </div>
+  </header>
+    <section class="categories">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Spring</h1>
+        <p class="lead text-muted">Spring is night walks, entertainment, new acquaintances, adventures, travel, emotions and fascinating stories. So let's share it together.</p>
+      </div>
+    </div>
+  </section>
+<div class="level">
+  <div class="easy">
+        <button id="hid1" onclick="viewDivEasy()" class="btn btn-primary btn-lg" style="position: relative; display: flex;flex-direction: column;">Easy</button>
+        <ul id="easy" style="display: none;">
+          <div class="card-">
+            <div class="card--body">
+                <button onclick="viewCall1()" class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Spring is already here!</button>
+                    <p class="card--text" id="Call1" style="display: none;">Let's go outside and enjoy the wonderful weather! Let's go for a walk or hike and have a picnic. We will find the perfect place to enjoy our lunch and each other's company.<br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                  </div>
+                </div>
+                <div class="card-">
+                  <div class="card--body">
+                    <button onclick="viewCall2()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;">Time for a new one.</button>
+                    <p id="Call2" style="display: none;"class="card--text">Spring is so that we can get rid of everything old and start something new. I want us to take away some of our habits and rituals that we are stuck in. Let everyone write down one thing that has become routine and that we would like to change, and then we will symbolically bury or burn them. Maybe it will save us time and energy to start something new?<br> <button type="button" class="btn btn-primary btn-sm" disabled >Send</button></p>
+                 </div>
+                </div>
+                <div class="card-">
+                  <div class="card--body">
+                    <button onclick="viewCall3()"class="btn btn-secondary btn-sm" style="display:flex;flex-direction: column; align-content: space-around;">Let's have a picnic!</button>
+                        <p id="Call3" style="display: none;"class="card--text">
+                          A picnic is very easy to organize, while getting a good mood and a charge of cheerfulness!
+                          <br> <button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                  </div>
+                </div>
+        </ul> 
+  </div>
+  <br>
+  <div class="middle">
+        <button id="hid2" onclick="viewDivMiddle()"class="btn btn-primary btn-lg"style="position: relative; display: flex;flex-direction: column;">Medium</button>
+        <ul id="middle" style="display: none;" >
+          <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall4()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Spring in the air.</button>
+                <p id="Call4" style="display: none;"class="card--text">It’s been a long winter, but spring is in the air. It's getting warmer, birds are singing, and I want to feel the risk! What about you? Let's enjoy nature a little. We can sit outside wrapped in a blanket together, admire the stars, listen to the sounds of the spring night, and see what this "spring fever" will lead us to!<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+            <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall5()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Cruise</button>
+                <p id="Call5" style="display: none;"class="card--text">Probably everyone has dreamed of a cruise at least once. let's make paper boats and send them on a journey.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <br>
+    <div class="hard">
+      <button id="hid3" onclick="viewDivHard()"class="btn btn-primary btn-lg"style="position: relative; display: flex;flex-direction: column;">Hard</button>
+        <ul id="hard" style="display: none;">
+          <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall6()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Rain!</button>
+                <p id="Call6" style="display: none;"class="card--text">It always rains at this time of year. Shall we go running under it?<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+             <div class="card-">
+              <div class="card--body">
+                <button onclick="viewCall7()"class="btn btn-secondary btn-sm" style="display:flex;  flex-direction: column; align-content: space-around;">Rubber boots</button>
+                <p id="Call7" style="display: none;"class="card--text">Let's plunge into childhood. We'll put on rubber boots and jump in puddles all day.<br><button type="button" class="btn btn-primary btn-sm" disabled>Send</button></p>
+              </div>
+            </div>
+        </ul>  
+    </div>
+  </div>
+</body>
+</html>
